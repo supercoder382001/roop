@@ -327,7 +327,7 @@ def run():
 
         restart_server = False
         try:
-            ui.queue().launch(inbrowser=True, server_name=server_name, server_port=server_port, share=roop.globals.CFG.server_share, ssl_verify=ssl_verify, prevent_thread_lock=False, show_error=True)
+            ui.queue().launch(inbrowser=True, server_name=server_name, server_port=server_port, share=True, ssl_verify=ssl_verify, prevent_thread_lock=False, show_error=True)
         except:
             restart_server = True
             run_server = False
